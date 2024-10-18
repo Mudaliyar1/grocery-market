@@ -39,3 +39,20 @@ function ham_close() {
     // Allow background scroll again
     body.style.overflow = ""; // Enable scrolling
 }
+
+
+function lang_open(){
+    document.getElementById("language-menu").style.display="block";
+    document.getElementById("hamburger-menu").style.display="none";
+    document.getElementById("cross-icon").style.display="none";
+    document.getElementById("lang-cross-icon").style.display="block";
+
+}
+
+function  lang_close(){
+    document.getElementById("language-menu").style.display="none";
+    document.getElementById("hamburger-menu").style.display="block";
+    document.getElementById("cross-icon").style.display="block";
+    document.getElementById("lang-cross-icon").style.display="none";
+
+}
