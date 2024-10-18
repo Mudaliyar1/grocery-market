@@ -1,15 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<title>Home</title>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="public/css/style.css">
-    <script src="public/js/script.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#hamburger").click(function () {
+                $("#hamburger-menu").fadeIn(200);
+            });
+
+            $("#hamburger").click(function () {
+                $("#cross-icon").toggle();
+                $("#hamburger").hide(); 
+            });
+            
+            $("#cross-icon").click(function () {
+                $("#cross-icon").hide();
+                $("#hamburger").show(); 
+                $("#hamburger-menu").fadeOut(300); 
+                $("#language-menu").hide();
+            });
+
+           $("#language").click(function(){
+                $("#language-menu").fadeIn();
+                $("#language-menu").css({"z-index":"30"});
+           });  
+            
+        });
+    </script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-    <p>hello world</p>
-    <p>hello world 2</p>
     
+
+
+    <header>
+        <nav id="nav-bar">
+            <div id="main-logo">
+                <a href="/">Grocery Marketing</a>
+            </div>
+    
+            <div id="nav-menu">
+                <a href="/store">Stores</a>
+                <a href="/products">Products</a>
+                <a href="/customer-login">Customer Login</a>
+                <a href="/shop-keeper-login">Shop-Keeper Login</a>
+                <a href="" class="language-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="black">
+                        <path
+                            d="m476-80 182-480h84L924-80h-84l-43-122H603L560-80h-84ZM160-200l-56-56 202-202q-35-35-63.5-80T190-640h84q20 39 40 68t48 58q33-33 68.5-92.5T484-720H40v-80h280v-80h80v80h280v80H564q-21 72-63 148t-83 116l96 98-30 82-122-125-202 201Zm468-72h144l-72-204-72 204Z" />
+                    </svg>
+                </a>
+            </div>
+    
+            <div id="hamburger">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="black" id="hamburger">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+            </div>
+    
+            <div id="cross-icon" style="display: none; padding-right: 40px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </div>
+    
+        </nav>
+        <div id="hamburger-menu">
+            <div id="hamburger-menu-items">
+                <a href="/store">Stores</a>
+                <a href="/products">Products</a>
+                <a href="/customer-login">Customer Login</a>
+                <a href="/shop-keeper-login">Shop-Keeper Login</a>
+                <div id="language">
+                    <p>Language</p>
+                </div>
+            </div>
+        </div>
+    
+        <div id="language-menu">
+            <div id="language-menu-items">
+                <p>English</p>
+                <p>Hindi</p>
+                <p>Gujarati</p>
+            </div>
+        </div>
+    </header>
+    
+    <main id="main">
+        <div>
+            <p>sss Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, voluptate aspernatur placeat voluptatum magnam in ad consequuntur eligendi. Ducimus ullam necessitatibus quidem repellendus hic error sunt sapiente at quis ex.
+            Vero maiores doloribus facere debitis impedit unde eveniet necessitatibus tempore, laudantium assumenda! Dolores distinctio corrupti fugiat praesentium beatae fuga? Nisi ipsam fuga, voluptate voluptatum sapiente pariatur corporis officiis libero expedita?
+            Quam animi labore assumenda? Consequuntur, incidunt similique quam excepturi dignissimos laborum corporis hic quibusdam. Vero aliquam laboriosam temporibus eius error ab omnis, quia non iure impedit, nesciunt suscipit deleniti ipsum.
+            Minima, vel? Dignissimos, repudiandae obcaecati! Recusandae eligendi illum repellendus eos corrupti ducimus id excepturi expedita facilis quis nisi quasi animi culpa aut, nihil et vero labore fugit ea minus sint!
+            Quia eius labore molestiae ullam veniam, reprehenderit sit, itaque modi ad, reiciendis non perspiciatis. Inventore, voluptatem. Quos numquam perspiciatis minus laboriosam laudantium cumque explicabo ullam, praesentium, quod repellat aperiam totam?
+            Iste nam eaque nisi eveniet excepturi, dolore iure saepe odio obcaecati laboriosam minus placeat reiciendis ab. Tempore aut dolorem animi laudantium dolores unde praesentium dignissimos fuga, ducimus aliquid temporibus commodi.
+            Qui accusantium voluptate, deserunt dolores voluptatibus unde nesciunt iusto id ipsa ipsam, quas, praesentium consequuntur similique? Soluta, deserunt eligendi culpa, ipsam, excepturi accusamus inventore iste quis aperiam consectetur sit eaque.
+            Culpa laudantium natus odio nemo repudiandae velit? Fuga error ea nostrum. Beatae culpa fuga distinctio quidem voluptatum molestias natus nostrum alias fugiat? Blanditiis eveniet neque facere soluta numquam doloremque a?
+            Ab sed magni aliquid et quibusdam obcaecati quaerat, sint impedit at ea voluptates. Minus minima qui, consectetur dolorum autem quos quo recusandae facere commodi non omnis praesentium asperiores error similique.
+            Voluptatum ducimus quam eligendi error ullam maiores molestias nisi sit, ratione nihil? Sed veritatis assumenda repellendus, dolor ea ullam provident nesciunt soluta dolorem iure numquam hic nihil quae error odio.
+            Odit, cum eaque assumenda dolorem omnis fuga voluptatem reprehenderit dolore sunt voluptates quo quasi iste neque quia, veritatis labore velit magni id corrupti, perspiciatis nesciunt atque asperiores. Nostrum, sequi culpa.
+            Vel atque fugit deserunt nesciunt voluptas possimus exercitationem nihil ab, optio dolorum neque laudantium eius fuga omnis incidunt eos ut quam maxime suscipit. Velit illo error ullam quaerat ad deserunt.
+            Fugiat consectetur ab sit cum delectus, iste asperiores magnam quod. Repudiandae mollitia deleniti aperiam, nostrum, tempora dolor optio aliquam quaerat provident iste rerum. Eaque laborum non facilis cum eligendi repellendus.
+            Vitae ab quibusdam culpa suscipit voluptatum, consequuntur quis enim corrupti beatae ex error harum, neque eius assumenda ratione voluptatibus autem. Repellendus beatae officiis maiores non aliquid aliquam consequatur maxime est?
+            Atque totam velit aliquid accusamus magni eum ratione ea iusto earum vero, molestiae nihil aspernatur ipsam, in asperiores odio laborum libero est perspiciatis autem cupiditate hic, numquam enim eius! Nesciunt!
+            Asperiores, nihil tempore. Placeat cumque vitae inventore maxime laborum debitis nesciunt voluptates, natus expedita? Amet ex odio, quae rem repellendus repellat tempore magnam nostrum incidunt modi obcaecati voluptatum ducimus temporibus?
+            Laudantium magni repellendus expedita eaque, repellat voluptate reiciendis incidunt tempora nihil libero minima. Animi, laborum, aliquam repudiandae culpa aut quae, ad quas hic consectetur quasi dignissimos incidunt quam nulla deleniti.
+            Nihil sed rem nostrum id accusantium, molestiae soluta repudiandae perspiciatis incidunt recusandae fugit inventore eligendi sint sit itaque quia adipisci minus non dolor aliquam nemo. Neque accusamus quasi sunt laboriosam.
+            Impedit ut voluptatum, ducimus at aliquid illo ipsa ad nisi cumque? Vel, exercitationem fugit! Quis ullam officia quas placeat numquam quae totam ipsam explicabo modi. Ipsam fuga animi maiores quam.
+            Aliquam consectetur quae quia dolore nihil dignissimos, ullam quisquam, deserunt illo facere molestiae magnam molestias amet nisi temporibus excepturi nam aperiam possimus, accusamus quibusdam nemo vitae dolorum? Reprehenderit, amet maiores.</p>
+        </div>
+    </main>
+
 </body>
+
 </html>
