@@ -117,7 +117,7 @@
 }
 
 #hamburger-menu {
-    display: block;
+    /* display: block; */
     width: 100vw;
     height: 100vh;
     background-color: grey;
