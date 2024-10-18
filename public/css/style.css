@@ -125,8 +125,20 @@
     display: none;
     top: 50px;
     z-index: 3;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
+#cross-icon {
+    display: none; /* Initially hidden */
+    opacity: 0;   /* Start with zero opacity */
+    transition: opacity 0.3s ease; /* Transition effect */
+}
+
+#hamburger-menu.show , #cross-icon.show{
+    display: block;
+    opacity: 1;
+}
 #hamburger-menu-items {
     display: flex;
     align-items: center;
