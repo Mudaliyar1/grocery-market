@@ -9,31 +9,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="public/css/style.css">
     <script src="public/js/jquery-3.7.1.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#hamburger").click(function () {
-                $("#hamburger-menu").fadeIn(200);
-            });
-
-            $("#hamburger").click(function () {
-                $("#cross-icon").toggle();
-                $("#hamburger").hide(); 
-            });
-            
-            $("#cross-icon").click(function () {
-                $("#cross-icon").hide();
-                $("#hamburger").show(); 
-                $("#hamburger-menu").fadeOut(300); 
-                $("#language-menu").hide();
-            });
-
-           $("#language").click(function(){
-                $("#language-menu").fadeIn();
-                $("#language-menu").css({"z-index":"30"});
-           });  
-            
-        });
-    </script>
+    <script src="public/js/script.js"></script>
+    
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
