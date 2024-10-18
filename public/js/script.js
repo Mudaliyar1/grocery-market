@@ -32,7 +32,7 @@ function ham_close() {
     setTimeout(() => {
         menu.style.display = "none"; 
         crossIcon.style.display = "none"; 
-    }, 100); // Match this time with the CSS transition duration
+    }, 50); // Match this time with the CSS transition duration
 
     hamburger.style.display = "block"; // Show hamburger icon
 
