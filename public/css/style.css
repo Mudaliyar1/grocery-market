@@ -126,13 +126,13 @@
     top: 50px;
     z-index: 3;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.2s ease;
 }
 
 #cross-icon {
     display: none; /* Initially hidden */
     opacity: 0;   /* Start with zero opacity */
-    transition: opacity 0.3s ease; /* Transition effect */
+    transition: opacity 0.2s ease; /* Transition effect */
 }
 
 #hamburger-menu.show , #cross-icon.show{
