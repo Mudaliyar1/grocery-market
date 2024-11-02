@@ -14,17 +14,13 @@ header {
     right: 0;
     height: 80px;
     background: rgba(255, 255, 255, 0.5);
-    /* Semi-transparent background */
     backdrop-filter: blur(10px);
-    /* Blur effect */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    /* Optional shadow */
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
     z-index: 1000;
-    /* Ensure it's above other content */
     border-bottom: 2.5px solid green;
 }
 
@@ -35,14 +31,10 @@ header {
     right: 0px;
     top: 0px;
     background: rgba(255, 255, 255, 0.5);
-    /* Semi-transparent background */
     backdrop-filter: blur(10px);
-    /* Blur effect */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    /* Optional shadow */
     transition: all 0.3s ease;
     z-index: 1999;
-    /* Ensure it's above other content */
     border-left: 2.5px solid green;
 }
 
@@ -62,27 +54,19 @@ header {
     position: fixed;
     top: 0;
     right: -300px;
-    /* Start off-screen */
     width: 100vw;
-    /* Set the width of the menu */
     height: 100%;
-    /* Full height */
     background-color: whitesmoke;
-    /* Change to red or your desired color */
     transition: right 0.5s ease-out;
-    /* Smooth transition */
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-    /* Optional: Add shadow for better visibility */
 }
 
 #hamburger-page.slide-in {
     right: 0;
-    /* Slide in */
 }
 
 #hamburger-page.slide-out {
     right: -120%;
-    /* Slide out */
 }
 
 
@@ -121,14 +105,53 @@ header {
     }
 }
 
-@media(min-width:901px){
+@media(min-width:901px) {
     /* #left-hamburger{
         position: fixed;
     } */
-    #hamburger-icon{
+
+    #hamburger-icon {
         margin-top: -200px;
     }
-    #cross-icon{
+
+    #cross-icon {
         margin-top: -200px;
+    }
+}
+
+
+
+/* main code of home page starts from here  */
+
+#main-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: red;
+}
+
+.stores-card {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    margin-left: 20px;
+    border-radius: 5px;
+    width: 230px;
+    height: 300px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow-x: scroll;
+}
+
+@media (max-width: 768px) {
+    #main-div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    #main-div {
+        grid-template-columns: 1fr;
     }
 }
