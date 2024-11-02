@@ -129,7 +129,7 @@ header {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
-    /* margin-left:40px; */
+    margin-left:-20px;
     /* background-color: red; */
     overflow-x: scroll;
 
@@ -155,8 +155,8 @@ header {
     border: 1px solid #ccc;
     margin-left: 30px;
     border-radius: 5px;
-    width: 250px;
-    height: 320px;
+    width: 280px;
+    height: 380px;
     padding: 18px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
