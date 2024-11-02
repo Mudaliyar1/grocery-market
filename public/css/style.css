@@ -7,82 +7,128 @@
     font-family: "Outfit", sans-serif;
 }
 
-header{
+header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     height: 80px;
-    background: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
-    backdrop-filter: blur(10px); /* Blur effect */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    background: rgba(255, 255, 255, 0.5);
+    /* Semi-transparent background */
+    backdrop-filter: blur(10px);
+    /* Blur effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Optional shadow */
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-    z-index: 501; /* Ensure it's above other content */
+    z-index: 1000;
+    /* Ensure it's above other content */
     border-bottom: 2.5px solid green;
 }
 
-#left-hamburger{
+#left-hamburger {
     height: 100vh;
     width: 90px;
     position: fixed;
     right: 0px;
-    background: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
-    backdrop-filter: blur(10px); /* Blur effect */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    top: 0px;
+    background: rgba(255, 255, 255, 0.5);
+    /* Semi-transparent background */
+    backdrop-filter: blur(10px);
+    /* Blur effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Optional shadow */
     transition: all 0.3s ease;
-    z-index: 1999; /* Ensure it's above other content */
+    z-index: 1999;
+    /* Ensure it's above other content */
     border-left: 2.5px solid green;
+}
+
+#left-hamburger>div {
+    position: absolute;
+    top: 600px;
+}
+
+#left-hamburger>div>:nth-child(2) {
+    position: absolute;
+    top: 600px;
+    z-index: 400;
 }
 
 #hamburger-page {
     display: none;
     position: fixed;
     top: 0;
-    right: -300px; /* Start off-screen */
-    width: 100vw; /* Set the width of the menu */
-    height: 100%; /* Full height */
-    background-color: whitesmoke; /* Change to red or your desired color */
-    transition: right 0.5s ease-out; /* Smooth transition */
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for better visibility */
+    right: -300px;
+    /* Start off-screen */
+    width: 100vw;
+    /* Set the width of the menu */
+    height: 100%;
+    /* Full height */
+    background-color: whitesmoke;
+    /* Change to red or your desired color */
+    transition: right 0.5s ease-out;
+    /* Smooth transition */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    /* Optional: Add shadow for better visibility */
 }
 
 #hamburger-page.slide-in {
-    right: 0; /* Slide in */
+    right: 0;
+    /* Slide in */
 }
 
 #hamburger-page.slide-out {
-    right: -120%; /* Slide out */
+    right: -120%;
+    /* Slide out */
 }
 
 
-@media (max-width : 900px){
-    #hamburger-icon{
+@media (max-width : 900px) {
+    #hamburger-icon {
         display: none;
     }
 
-    #left-hamburger{
+    #left-hamburger {
         display: none;
     }
 }
-@media (max-width : 899px){
-    #hamburger-icon{
+
+@media (max-width : 899px) {
+    #hamburger-icon {
         display: block;
-        margin-top: -310px;
-    }
-    #cross-icon{
-        display: block;
-        margin-top: -310px;
+        margin-top: -860px;
+
     }
 
-    #left-hamburger{
+    #cross-icon {
+        display: block;
+        margin-top: -860px;
+    }
+
+    #left-hamburger {
         display: block;
         border: none;
+        position: fixed;
+        top: 285px;
+        height: 100px;
         background: transparent;
         box-shadow: none;
         backdrop-filter: none;
         z-index: 1000;
+    }
+}
+
+@media(min-width:901px){
+    /* #left-hamburger{
+        position: fixed;
+    } */
+    #hamburger-icon{
+        margin-top: -200px;
+    }
+    #cross-icon{
+        margin-top: -200px;
     }
 }

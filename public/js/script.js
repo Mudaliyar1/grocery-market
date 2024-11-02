@@ -39,7 +39,7 @@ function ham_close() {
 
     crossIcon.style.display = "none";
     hamIcon.style.display = "block";
-    // hamStyle.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+    hamStyle.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
     hamStyle.style.zIndex = "2000";
     bodyScroll.style.overflowY= "scroll";
 
