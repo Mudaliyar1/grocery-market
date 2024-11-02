@@ -129,7 +129,7 @@ header {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
-    margin-left:-20px;
+    margin-left:-10px;
     /* background-color: red; */
     overflow-x: scroll;
 
@@ -153,7 +153,7 @@ header {
 .stores-card {
     background-color: #f0f0f0;
     border: 1px solid #ccc;
-    margin-left: 30px;
+    margin-left: 20px;
     border-radius: 5px;
     width: 280px;
     height: 380px;
@@ -161,6 +161,10 @@ header {
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow-x: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 @media (max-width: 768px) {
@@ -174,3 +178,30 @@ header {
         grid-template-columns: 1fr;
     }
 }
+
+
+.store-img{
+    width: 230px;
+    height: 230px;
+    background-color: red;
+    border-radius: 5px;
+}
+
+
+.store-details{
+    text-align: left;
+    padding-top: 20px;
+    margin-left: -50px;
+}
+
+.store-details> a > button{
+    margin-top: 20px;
+    margin-left: 70px;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid green;
+    font-size: 17px;
+    text-align: center;
+}
+
