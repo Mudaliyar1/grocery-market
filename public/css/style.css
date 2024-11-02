@@ -44,8 +44,8 @@ header{
     right: -300px; /* Start off-screen */
     width: 100vw; /* Set the width of the menu */
     height: 100%; /* Full height */
-    background-color: red; /* Change to red or your desired color */
-    transition: right 0.3s ease; /* Smooth transition */
+    background-color: whitesmoke; /* Change to red or your desired color */
+    transition: right 0.5s ease; /* Smooth transition */
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for better visibility */
 }
 
