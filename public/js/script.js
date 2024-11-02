@@ -1,58 +1,46 @@
 function ham_open() {
-    const menu = document.getElementById("hamburger-menu");
-    const crossIcon = document.getElementById("cross-icon");
-    const hamburger = document.getElementById("hamburger");
-    const body = document.body;
+    let show = document.getElementById("hamburger-page");
+    let crossIcon = document.getElementById("cross-icon");
+    let hamIcon = document.getElementById("hamburger-icon");
+    let hamStyle = document.getElementById("left-hamburger");
+    let bodyScroll = document.getElementById("body");
 
-    // Set display to block first, then add the class to fade in
-    menu.style.display = "block"; 
-    crossIcon.style.display = "block"; 
-    setTimeout(() => {
-        menu.classList.add("show");
-        crossIcon.classList.add("show");
-    }, 10); // Small timeout to ensure display is applied first
+    // Ensure the menu is initially set to be visible
+    show.style.display = "block";
+    show.style.zIndex = "1010";
 
-    hamburger.style.display = "none"; // Hide hamburger icon
+    // Remove any previous slide-out class before sliding in
+    show.classList.remove("slide-out");
+    show.classList.add("slide-in");
 
-    // Prevent background scroll
-    body.style.overflow = "hidden"; // Disable scrolling
+    crossIcon.style.display = "block";
+    hamIcon.style.display = "none";
+    hamStyle.style.backgroundColor = "transparent";
+    hamStyle.style.zIndex = "1201";
+    bodyScroll.style.overflowY= "hidden";
 }
 
 function ham_close() {
-    const menu = document.getElementById("hamburger-menu");
-    const crossIcon = document.getElementById("cross-icon");
-    const hamburger = document.getElementById("hamburger");
-    const body = document.body;
+    let close = document.getElementById("hamburger-page");
+    let crossIcon = document.getElementById("cross-icon");
+    let hamIcon = document.getElementById("hamburger-icon");
+    let hamStyle = document.getElementById("left-hamburger");
+    let bodyScroll = document.getElementById("body");
 
-    // Remove the class to fade out
-    menu.classList.remove("show");
-    crossIcon.classList.remove("show");
+    // Add class for slide-out animation
+    close.classList.remove("slide-in");
+    close.classList.add("slide-out");
 
-    // Use a timeout to wait for the fade-out effect before hiding
-    setTimeout(() => {
-        menu.style.display = "none"; 
-        crossIcon.style.display = "none"; 
-    }, 50); // Match this time with the CSS transition duration
+    // Wait for the animation to finish before hiding the menu
+    close.addEventListener('animationend', function() {
+        close.style.display = "none";
+        close.classList.remove("slide-out");
+    }, { once: true });
 
-    hamburger.style.display = "block"; // Show hamburger icon
-
-    // Allow background scroll again
-    body.style.overflow = ""; // Enable scrolling
-}
-
-
-function lang_open(){
-    document.getElementById("language-menu").style.display="block";
-    document.getElementById("hamburger-menu").style.display="none";
-    document.getElementById("cross-icon").style.display="none";
-    document.getElementById("lang-cross-icon").style.display="block";
-
-}
-
-function  lang_close(){
-    document.getElementById("language-menu").style.display="none";
-    document.getElementById("hamburger-menu").style.display="block";
-    document.getElementById("cross-icon").style.display="block";
-    document.getElementById("lang-cross-icon").style.display="none";
+    crossIcon.style.display = "none";
+    hamIcon.style.display = "block";
+    hamStyle.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+    hamStyle.style.zIndex = "500";
+    bodyScroll.style.overflowY= "scroll";
 
 }
