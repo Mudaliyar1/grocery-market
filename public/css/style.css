@@ -20,7 +20,7 @@ header{
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-    z-index: 1001; /* Ensure it's above other content */
+    z-index: 501; /* Ensure it's above other content */
     border-bottom: 2.5px solid green;
 }
 
@@ -33,7 +33,7 @@ header{
     backdrop-filter: blur(10px); /* Blur effect */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
     transition: all 0.3s ease;
-    z-index: 99; /* Ensure it's above other content */
+    z-index: 1999; /* Ensure it's above other content */
     border-left: 2.5px solid green;
 }
 
@@ -55,4 +55,34 @@ header{
 
 #hamburger-page.slide-out {
     right: -120%; /* Slide out */
+}
+
+
+@media (max-width : 900px){
+    #hamburger-icon{
+        display: none;
+    }
+
+    #left-hamburger{
+        display: none;
+    }
+}
+@media (max-width : 899px){
+    #hamburger-icon{
+        display: block;
+        margin-top: -310px;
+    }
+    #cross-icon{
+        display: block;
+        margin-top: -310px;
+    }
+
+    #left-hamburger{
+        display: block;
+        border: none;
+        background: transparent;
+        box-shadow: none;
+        backdrop-filter: none;
+        z-index: 1000;
+    }
 }

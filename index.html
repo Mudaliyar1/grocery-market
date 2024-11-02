@@ -22,14 +22,14 @@
         <h3>Grocery Marketing</h3>
     </header>
 
-    <div id="left-hamburger" style="z-index: 500;">
+    <div id="left-hamburger">
         <div style="position: absolute; top: 50%;">
-            <i class="fa-solid fa-bars" style="position: absolute; left: 30px; font-size: 31px;" onclick="ham_open()" id="hamburger-icon">
+            <i class="fa-solid fa-bars" style="position: absolute; left: 30px; font-size: 31px; z-index: 1000;" onclick="ham_open()" id="hamburger-icon">
             </i>
         </div>
 
         <div style="position: absolute; top: 50%; z-index: 400;">
-            <i class="fa-solid fa-x" style="position: absolute; left: 30px; font-size: 31px; display: none;" onclick="ham_close()" id="cross-icon">
+            <i class="fa-solid fa-x" style="position: absolute; left: 30px; font-size: 31px; display: none; z-index: 1000;" onclick="ham_close()" id="cross-icon">
             </i>
         </div>
     </div>
@@ -42,11 +42,10 @@
 
     <main style="position: relative; top: 100px;">
         <div style="max-width: 70vw; justify-content: center; text-align: left; margin-left: 5px;">
-
-
             <h2 style="text-align: center;">This site is on under construction</h2>
         </div>
     </main>
+
 </body>
 
 </html>
