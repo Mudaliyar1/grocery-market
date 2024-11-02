@@ -180,11 +180,6 @@ header {
     }
 }
 
-.stores-card:active {
-    transform: rotate3d(0, 1, 0.5, 10.142rad);
-    box-shadow: 15px 5px 5px grey;
-    backdrop-filter: blur(10px);
-}
 
 .store-img {
     width: 230px;
