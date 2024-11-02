@@ -18,7 +18,7 @@
 
 <body id="body">
 
-    <header>
+    <header id="header">
         <h3>Grocery Marketing</h3>
     </header>
 
@@ -30,7 +30,8 @@
         </div>
 
         <div>
-                <i class="fa-solid fa-xmark" style="position: absolute; left: 30px; font-size: 31px; display: none; z-index: 1000;"
+            <i class="fa-solid fa-xmark"
+                style="position: absolute; left: 30px; font-size: 31px; display: none; z-index: 1000;"
                 onclick="ham_close()" id="cross-icon"></i>
         </div>
     </div>
@@ -42,20 +43,24 @@
     </div>
 
     <main style="position: relative; top: 100px;">
+
         <h2 style="text-align: center;">Available Shops</h2>
+
         <div id="main-div">
-            <div class="stores-card"></div>
-            <div class="stores-card"></div>
-            <div class="stores-card"></div>
-            <div class="stores-card"></div>
-            <div class="stores-card"></div>
-            <div class="stores-card"></div>
-            <div class="stores-card"></div>
-            <div class="stores-card"></div>
-            <div class="stores-card"></div>
-            <div class="stores-card"></div>
-            <div class="stores-card"></div>
-            <div class="stores-card"></div>
+            <div id="store-container">
+                <div class="stores-card"></div>
+                <div class="stores-card"></div>
+                <div class="stores-card"></div>
+                <div class="stores-card"></div>
+                <div class="stores-card"></div>
+                <div class="stores-card"></div>
+                <div class="stores-card"></div>
+                <div class="stores-card"></div>
+                <div class="stores-card"></div>
+                <div class="stores-card"></div>
+                <div class="stores-card"></div>
+                <div class="stores-card"></div>
+            </div>
         </div>
     </main>
 

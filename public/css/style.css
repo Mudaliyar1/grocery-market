@@ -20,12 +20,12 @@ header {
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-    z-index: 1000;
+    z-index: 5;
     border-bottom: 2.5px solid green;
 }
 
 #left-hamburger {
-    height: 100vh;
+    height: 130vh;
     width: 90px;
     position: fixed;
     right: 0px;
@@ -34,7 +34,7 @@ header {
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    z-index: 899;
+    z-index: 3;
     border-left: 2.5px solid green;
 }
 
@@ -43,16 +43,16 @@ header {
     top: 600px;
 }
 
-#left-hamburger>div>:nth-child(2) {
+/* #left-hamburger>div>:nth-child(2) {
     position: absolute;
     top: 600px;
     z-index: 400;
-}
+} */
 
 #hamburger-page {
     display: none;
     position: fixed;
-    top: 0;
+    top: 0px;
     right: -300px;
     width: 100vw;
     height: 100%;
@@ -97,18 +97,19 @@ header {
         border: none;
         position: fixed;
         top: 285px;
-        height: 100px;
-        background: transparent;
+        height: 0px;
+        background: none;
         box-shadow: none;
         backdrop-filter: none;
-        z-index: 1000;
+        z-index: 6;
     }
 }
 
 @media(min-width:901px) {
-    /* #left-hamburger{
+    #left-hamburger {
         position: fixed;
-    } */
+
+    }
 
     #hamburger-icon {
         margin-top: -200px;
@@ -123,21 +124,39 @@ header {
 
 /* main code of home page starts from here  */
 
-#main-div {
+#store-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
-    background-color: red;
+    /* margin-left:40px; */
+    /* background-color: red; */
+    overflow-x: scroll;
+
+}
+
+@media(min-width: 900px) {
+    #store-container {
+        width: 90%;
+        margin-left: -30px;
+        overflow: auto;
+    }
+}
+@media(min-width: 1000px) {
+    #store-container {
+        width: 80%;
+        margin-left: 70px;
+        overflow: auto;
+    }
 }
 
 .stores-card {
     background-color: #f0f0f0;
     border: 1px solid #ccc;
-    margin-left: 20px;
+    margin-left: 30px;
     border-radius: 5px;
-    width: 230px;
-    height: 300px;
+    width: 250px;
+    height: 320px;
     padding: 18px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -145,13 +164,13 @@ header {
 }
 
 @media (max-width: 768px) {
-    #main-div {
+    #store-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 480px) {
-    #main-div {
+    #store-container {
         grid-template-columns: 1fr;
     }
 }

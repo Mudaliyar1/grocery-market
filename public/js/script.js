@@ -7,16 +7,16 @@ function ham_open() {
 
     // Ensure the menu is initially set to be visible
     show.style.display = "block";
-    show.style.zIndex = "1010";
+    show.style.zIndex = "20";
 
     // Remove any previous slide-out class before sliding in
     show.classList.remove("slide-out");
-    show.classList.add("slide-in");
-
+    show.classList.add("slide-in"); 
+    
     crossIcon.style.display = "block";
     hamIcon.style.display = "none";
     hamStyle.style.backgroundColor = "transparent";
-    hamStyle.style.zIndex = "1201";
+    hamStyle.style.zIndex = "21";
     bodyScroll.style.overflowY= "hidden";
 }
 
@@ -40,7 +40,7 @@ function ham_close() {
     crossIcon.style.display = "none";
     hamIcon.style.display = "block";
     hamStyle.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-    hamStyle.style.zIndex = "2000";
+    // hamStyle.style.zIndex = "2000";
     bodyScroll.style.overflowY= "scroll";
 
 }
