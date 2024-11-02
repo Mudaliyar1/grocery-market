@@ -34,7 +34,7 @@ header {
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    z-index: 1999;
+    z-index: 899;
     border-left: 2.5px solid green;
 }
 
@@ -138,7 +138,7 @@ header {
     border-radius: 5px;
     width: 230px;
     height: 300px;
-    padding: 45px;
+    padding: 18px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow-x: scroll;
