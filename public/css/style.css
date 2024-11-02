@@ -129,7 +129,7 @@ header {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
-    margin-left:-10px;
+    margin-left: -10px;
     /* background-color: red; */
     overflow-x: scroll;
 
@@ -142,6 +142,7 @@ header {
         overflow: auto;
     }
 }
+
 @media(min-width: 1000px) {
     #store-container {
         width: 80%;
@@ -179,8 +180,13 @@ header {
     }
 }
 
+.stores-card:active {
+    transform: rotate3d(0, 1, 0.5, 10.142rad);
+    box-shadow: 15px 5px 5px grey;
+    backdrop-filter: blur(10px);
+}
 
-.store-img{
+.store-img {
     width: 230px;
     height: 230px;
     background-color: red;
@@ -188,13 +194,13 @@ header {
 }
 
 
-.store-details{
+.store-details {
     text-align: left;
     padding-top: 20px;
     margin-left: -50px;
 }
 
-.store-details> a > button{
+.store-details>a>button {
     margin-top: 20px;
     margin-left: 70px;
     width: 100px;
@@ -204,4 +210,3 @@ header {
     font-size: 17px;
     text-align: center;
 }
-
