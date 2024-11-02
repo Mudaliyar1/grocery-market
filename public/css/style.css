@@ -45,7 +45,7 @@ header{
     width: 100vw; /* Set the width of the menu */
     height: 100%; /* Full height */
     background-color: whitesmoke; /* Change to red or your desired color */
-    transition: right 0.5s ease; /* Smooth transition */
+    transition: right 0.5s ease-out; /* Smooth transition */
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for better visibility */
 }
 
