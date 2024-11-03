@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<title>Home</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="public/css/style.css">
+    <script src="public/js/jquery-3.7.1.js"></script>
+    <script src="public/js/script.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body id="body">
+
+    <header id="header">
+        <a href="index.html" style="text-decoration: none; color: green;">
+            <h3>Grocery Marketing</h3>
+        </a>
+    </header>
+
+    <div id="left-hamburger">
+        <div>
+            <i class="fa-solid fa-bars" style="position: absolute; left: 30px; font-size: 30px; z-index: 1000;"
+                onclick="ham_open()" id="hamburger-icon">
+            </i>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-xmark"
+                style="position: absolute; left: 30px; font-size: 31px; display: none; z-index: 1000;"
+                onclick="ham_close()" id="cross-icon"></i>
+        </div>
+    </div>
+
+    <div id="hamburger-page">
+        <div id="hamburger-content">
+            <h2>Welcome To Grocery Marketing</h2>
+            <br>
+            <a href="index.html">Home</a>
+            <a href="about-us.html">About US</a>
+            <a href="contact-us.html">Contact Us</a>
+            <a href="login.html">Login</a>
+        </div>
+        <div id="company-author">
+            <p>Made By Pushkar <br>& <br>Vijay</p>
+        </div>
+        <div id="hamburger-policy">
+            <a href="">Licensing </a>
+            <a href="">Legal Notice</a>
+            <a href="">Privacy Policy</a>
+        </div>
+        <div id="hamburger-social-media">
+            <div>
+                <p style="margin-left: 15px; font-size: 25px; font-weight: 700;">Follow Us On</p>
+            </div>
+            <br>
+            <div id="social-media-icons">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <main style="position: relative; top: 100px;">
+
+
+    </main>
+
+</body>
+
+</html>
