@@ -8,6 +8,7 @@ function ham_open() {
     // Ensure the menu is initially set to be visible
     show.style.display = "block";
     show.style.zIndex = "20";
+    show.style.overflowY= "scroll";
 
     // Remove any previous slide-out class before sliding in
     show.classList.remove("slide-out");
