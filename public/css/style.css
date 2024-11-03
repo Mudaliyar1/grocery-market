@@ -200,6 +200,7 @@ header {
     justify-content: center;
     margin-left: 65%;
     margin-top: -110px;
+    margin-bottom: 20px;
 }
 
 @media (max-width:1052px) {
