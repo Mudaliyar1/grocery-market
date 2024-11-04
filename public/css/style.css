@@ -6,7 +6,6 @@
     padding: 0px;
     /* font-family: "Outfit", sans-serif; */
     font-family: "Acme", sans-serif;
-
 }
 
 header {
@@ -54,14 +53,27 @@ header {
 
 .closeIcon>i{
     cursor: pointer;
-    transition:  all 0.2s ease;
+    /* transition:  all 0.2s ease; */
+    animation: closean 2s ease infinite;
 }
+/* 
 .closeIcon>i:hover{
     transform: rotate(90deg);
     scale: 0.8;
+} */
+
+
+@keyframes closean {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }
-
-
 
 #hamburger-page {
     display: none;
@@ -155,10 +167,10 @@ header {
     font-weight: 700;
     /* border: 2px solid green; */
     border-radius: 9px;
+    font-family: "Acme", sans-serif;
     width: 150px;
     /* padding: 7px; */
     text-align: left;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #company-author {
