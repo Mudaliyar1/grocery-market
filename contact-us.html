@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<title>Home</title>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="public/css/style.css">
     <script src="public/js/jquery-3.7.1.js"></script>
     <script src="public/js/script.js"></script>
@@ -25,23 +22,41 @@
     </header>
 
     <div id="left-hamburger">
-        <div>
-            <i class="fa-solid fa-bars" style="position: absolute; left: 30px; font-size: 30px; z-index: 1000;"
+        <!-- <i class="fa-solid fa-bars" style="position: absolute; left: 30px; font-size: 30px; z-index: 1000;"
                 onclick="ham_open()" id="hamburger-icon">
-            </i>
+            </i> -->
+
+        <div class="openMenu" style="position: absolute;right: 0; width: 60px; cursor: pointer;" onclick="ham_open()"
+            id="hamburger-icon">
+            <svg-animate trigger="loop">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:anim="http://www.w3.org/2000/anim" anim="" anim:transform-origin="50% 50%" anim:duration="2"
+                    anim:ease="ease-in-out">
+                    <g id="1">
+                        <rect width="100" height="100" fill="none"></rect>
+                        <rect id="Rectangle 15" x="20" y="22" width="50" height="4" fill="black"
+                            anim:x="0[0:0.6:-8:ease-in][0.6:1.4:12:ease-in-out][1.4:2:0:ease-in-out]"></rect>
+                        <rect id="Rectangle 16" x="20" y="38" width="50" height="4" fill="black"
+                            anim:x="0[0:0.6:-12:ease-in][0.6:1.4:8:ease-in-out][1.4:2:0:ease-in-out]"></rect>
+                        <rect id="Rectangle 17" x="20" y="54" width="50" height="4" fill="black"
+                            anim:x="0[0:0.6:10:ease-in-out][0.6:1.4:-8:ease-in-out][1.4:2:0:ease-in-out]"></rect>
+                    </g>
+                </svg>
+            </svg-animate>
         </div>
 
-        <div>
-            <i class="fa-solid fa-xmark"
-                style="position: absolute; left: 30px; font-size: 31px; display: none; z-index: 1000;"
+        <div class="closeIcon">
+            <i class="fa-solid fa-xmark "
+                style="position: absolute; left: 30px; font-size: 40px; display: none; z-index: 100; border-radius: none;"
                 onclick="ham_close()" id="cross-icon"></i>
         </div>
+
     </div>
 
     <div id="hamburger-page">
         <div id="hamburger-content">
             <h2>Welcome To Grocery Marketing</h2>
-            <br>
+            <!-- <br> -->
             <a href="index.html">Home</a>
             <a href="about-us.html">About US</a>
             <a href="contact-us.html">Contact Us</a>
@@ -51,13 +66,13 @@
             <p>Made By Pushkar <br>& <br>Vijay</p>
         </div>
         <div id="hamburger-policy">
-            <a href="">Licensing </a>
-            <a href="">Legal Notice</a>
-            <a href="">Privacy Policy</a>
+            <a href="licensing.html">Licensing </a>
+            <a href="legal-notice.html">Legal Notice</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
         </div>
         <div id="hamburger-social-media">
             <div>
-                <p style="margin-left: 15px; font-size: 25px; font-weight: 700;">Follow Us On</p>
+                <p style=" text-align: center; font-size: 25px; font-weight: 700;">Follow Us On</p>
             </div>
             <br>
             <div id="social-media-icons">
@@ -70,9 +85,14 @@
 
     <main style="position: relative; top: 100px;">
 
-
+        <div>
+            <h2>Contact Us Page (Under-Construction)</h2>
+        </div>
+        
     </main>
 
+    <!-- SVG Animate Script -->
+    <script src="https://cdn.jsdelivr.net/npm/@figmania/loader/build/index.umd.js"></script>
 </body>
 
 </html>
