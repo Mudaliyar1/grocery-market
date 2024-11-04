@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
 * {
     margin: 0px;
     padding: 0px;
-    font-family: "Outfit", sans-serif;
+    /* font-family: "Outfit", sans-serif; */
+    font-family: "Acme", sans-serif;
+
 }
 
 header {
@@ -48,6 +50,18 @@ header {
     top: 600px;
     z-index: 400;
 } */
+
+
+.closeIcon>i{
+    cursor: pointer;
+    transition:  all 0.2s ease;
+}
+.closeIcon>i:hover{
+    transform: rotate(90deg);
+    scale: 0.8;
+}
+
+
 
 #hamburger-page {
     display: none;
@@ -139,10 +153,10 @@ header {
     text-decoration: none;
     color: black;
     font-weight: 700;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     border-radius: 9px;
     width: 150px;
-    padding: 7px;
+    /* padding: 7px; */
     text-align: left;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -197,25 +211,38 @@ header {
 #hamburger-social-media {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     margin-left: 65%;
     margin-top: -110px;
-    margin-bottom: 20px;
+    padding-bottom: 30px;
 }
 
-@media (max-width:1052px) {
+@media (max-width:1195px) {
     #hamburger-social-media {
-        margin-top: 30px;
-        margin-left: 15%;
+        position: absolute;
+        left: -25%;
+        top: 700px;
     }
 }
 @media (max-width:621px) {
     #hamburger-social-media {
-        margin-top:70px;
-        /* margin-left: 200px; */
-        justify-content: center;
-        display: flex;
-        align-items: center;
+        position: absolute;
+        left: -25%;
+        top: 820px;
+    }
+}
+@media (max-width:580px) {
+    #hamburger-social-media {
+        position: absolute;
+        left: -30%;
+        top: 840px;
+    }
+}
+@media (max-width:496px) {
+    #hamburger-social-media {
+        position: absolute;
+        left: -39%;
+        top: 840px;
     }
 }
 
@@ -226,11 +253,16 @@ header {
 }
 
 #social-media-icons>a>i {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     padding: 15px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     font-size: 20px;
     color: green;
+}
+
+#social-media-icons > a{
+    border: 2px solid black;
+    border-radius: 100%;
 }
 
 /* main code of home page starts from here  */
@@ -272,7 +304,6 @@ header {
     padding: 18px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow-x: scroll;
     display: flex;
     justify-content: center;
     align-items: center;
