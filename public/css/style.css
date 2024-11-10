@@ -39,8 +39,6 @@ header {
 @media (max-width : 900px) {
     #shoppingCart-icon {
         display: block;
-        color: green;
-        mix-blend-mode: difference;
     }
 }
 
@@ -83,8 +81,8 @@ header {
     font-size: 20px;
 }
 
-@media (min-width:900px){
-    #shopClose-icon{
+@media (min-width:900px) {
+    #shopClose-icon {
         display: none;
     }
 }
@@ -369,11 +367,11 @@ header {
     padding: 20px;
     margin-left: -10px;
     /* background-color: red; */
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
 
 }
 
-@media(min-width: 900px) {
+/* @media(min-width: 900px) {
     #store-container {
         width: 90%;
         margin-left: -30px;
@@ -387,7 +385,129 @@ header {
         margin-left: 70px;
         overflow: auto;
     }
+} */
+@media(max-width: 1280px) {
+    #store-container {
+        width: 60%;
+        margin-left: 30px;
+    }
 }
+
+@media(max-width: 1210px) {
+    #store-container {
+        width: 60%;
+        margin-left: 150px;
+    }
+}
+@media(max-width: 1122px) {
+    #store-container {
+        width: 60%;
+        margin-left: 150px;
+    }
+}
+@media(max-width: 1060px) {
+    #store-container {
+        width: 60%;
+        margin-left: 120px;
+        /* overflow: auto; */
+    }
+}
+@media(max-width: 1000px) {
+    #store-container {
+        width: 50%;
+        margin-left: 90px;
+    }
+}
+@media(max-width: 950px) {
+    #store-container {
+        width: 45%;
+        margin-left: 60px;
+    }
+}
+@media(max-width: 900px) {
+    #store-container {
+        width: 45%;
+        margin-left: 60px;
+    }
+}
+@media(max-width: 840px) {
+    #store-container {
+        width: 45%;
+        margin-left: 40px;
+    }
+}
+@media(max-width: 800px) {
+    #store-container {
+        width: 40%;
+        margin-left: 30px;
+    }
+}
+@media(max-width: 765px) {
+    #store-container {
+        width: 40%;
+        margin-left: 0px;
+        gap: 10px;
+    }
+}
+@media(max-width: 730px) {
+    #store-container {
+        width: 40%;
+        margin-left: 150px;
+        gap: 10px;
+    }
+}
+@media(max-width: 600px) {
+    #store-container {
+        width: 40%;
+        margin-left: 80px;
+        gap: 10px;
+    }
+}
+@media(max-width: 550px) {
+    #store-container {
+        width: 40%;
+        margin-left: 60px;
+        gap: 10px;
+    }
+}
+
+@media(max-width: 500px) {
+    #store-container {
+        width: 40%;
+        margin-left: 40px;
+        gap: 10px;
+    }
+}
+@media(max-width: 450px) {
+    #store-container {
+        width: 40%;
+        margin-left: 20px;
+        gap: 10px;
+    }
+}
+@media(max-width: 400px) {
+    #store-container {
+        width: 40%;
+        margin-left: 0px;
+        gap: 10px;
+    }
+}
+@media(max-width: 375px) {
+    #store-container {
+        width: 40%;
+        margin-left: -20px;
+        gap: 10px;
+    }
+}
+@media(max-width: 345px) {
+    #store-container {
+        width: 40%;
+        margin-left: -30px;
+        gap: 10px;
+    }
+}
+
+
 
 .stores-card {
     background-color: #f0f0f0;
@@ -405,9 +525,20 @@ header {
     flex-direction: column;
 }
 
+@media (max-width: 1210px) {
+    #store-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
     #store-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 730px) {
+    #store-container {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
