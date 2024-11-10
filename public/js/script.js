@@ -45,3 +45,15 @@ function ham_close() {
     bodyScroll.style.overflowY= "scroll";
 
 }
+
+function shopCart(){
+    let cartIcon = document.getElementById("store-basket-div");
+
+    cartIcon.style.display ="block";
+}
+
+function shopClose(){
+    let shopCloseicon=document.getElementById("store-basket-div");
+
+    shopCloseicon.style.display="none";
+}
