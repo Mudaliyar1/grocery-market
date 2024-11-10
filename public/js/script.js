@@ -57,3 +57,8 @@ function shopClose(){
 
     shopCloseicon.style.display="none";
 }
+
+function removeProduct(){
+    let remove= document.getElementById("product-basket-div");
+    remove.style.display="none";
+}
