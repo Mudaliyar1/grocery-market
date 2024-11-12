@@ -956,7 +956,7 @@ header {
     position: sticky;
     top: -1px;
     font-size: 25px;
-    z-index: 20;
+    z-index: 10;
 }
 
 #store-mobile-product .mobile-product-div{
