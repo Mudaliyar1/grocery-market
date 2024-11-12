@@ -47,18 +47,27 @@ function ham_close() {
 }
 
 function shopCart(){
-    let cartIcon = document.getElementById("store-basket-div");
+    let cartIcon = document.getElementById("store-mobile-basket");
+    let mobImg=document.getElementById("store-mobile-img");
+    let mobDetail=document.getElementById("store-mobile-detail");
+    let mobProduct=document.getElementById("store-mobile-product");
+    let mobMap=document.getElementById("store-mobile-map");
 
     cartIcon.style.display ="block";
+    mobImg.style.display="none"
+    mobDetail.style.display="none"
+    mobProduct.style.display="none"
+    mobMap.style.display="none"
 }
 
 function shopClose(){
-    let shopCloseicon=document.getElementById("store-basket-div");
+    let shopCloseicon=document.getElementById("store-mobile-basket");
 
     shopCloseicon.style.display="none";
 }
 
-function removeProduct(){
-    let remove= document.getElementById("product-basket-div");
-    remove.style.display="none";
-}
+
+// function removeProduct(){
+//     let remove= document.getElementById("product-basket-div");
+//     remove.style.display="none";
+// }
