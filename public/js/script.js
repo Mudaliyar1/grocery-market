@@ -62,8 +62,16 @@ function shopCart(){
 
 function shopClose(){
     let shopCloseicon=document.getElementById("store-mobile-basket");
+    let mobImg=document.getElementById("store-mobile-img");
+    let mobDetail=document.getElementById("store-mobile-detail");
+    let mobProduct=document.getElementById("store-mobile-product");
+    let mobMap=document.getElementById("store-mobile-map");
 
     shopCloseicon.style.display="none";
+    mobImg.style.display="block"
+    mobDetail.style.display="block"
+    mobProduct.style.display="block"
+    mobMap.style.display="block"
 }
 
 

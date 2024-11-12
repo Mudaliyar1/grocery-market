@@ -965,6 +965,37 @@ header {
     height: 200px;
     border: 2px solid red;
     display: none;
+    overflow-y: scroll;
+}
+#store-mobile-basket  #mobile-basket-heading{
+    text-align: center;
+    width: 90px;
+    position: sticky;
+    top: 2px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+#mobile-basket-heading i{
+    position: sticky;
+    top: 2px;
+    margin-top: -20px;
+    margin-left: 255px;
+    font-size: 30px;
+}
+#store-mobile-basket  #basket-checkout-btn{
+    text-align: center;
+    width: 90px;
+    position: sticky;
+    top: 165px;
+    margin-top: 5px;
+    margin-left: 200px;
+}
+
+#basket-checkout-btn>button{
+    width: 80px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
 }
 
 @media (max-width:1200px) {
