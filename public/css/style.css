@@ -636,9 +636,6 @@ header {
     gap: 50px;
     left: 10%;
 }
-.sec-1st div{
-    max-width: 89%;
-}
 
 @media (max-width : 1780px) {
      .store-page-main-div .sec-1st{
@@ -689,57 +686,11 @@ header {
     height: 207px;
     border: 2px solid red;
     margin-left: 15px;
-    max-width: 89%;
 }
 
 
 @media (max-width : 1780px) {
     .store-page>.store-page-main-div>.sec-2nd>div:nth-child(2) {
         margin-left: -20px;
-    }
-}
-
-
-@media (max-width:900px) {
-
-    .store-page-main-div{
-        display: flex;
-        /* justify-content: center; */
-        /* align-items: center; */
-        /* flex-direction: column; */
-    }
-
-    .store-page-main-div .sec-1st {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       flex-wrap: wrap;      
-       flex-direction: column;  
-       margin-left: 350px;
-       margin-top: 90px;
-    }
-
-    .store-page>.store-page-main-div>.sec-1st>div:nth-child(2) {
-        margin-top: 1%;
-        max-width: 1000%;
-    }
-    
-    .store-page-main-div .sec-2nd {
-        display: grid;
-        grid-template-columns: repeat(3, 0.3fr);
-        margin-right: 60px;
-        position: absolute;
-        gap: 50px;
-        left: 100px;
-        /* top: 800px; */
-    }
-    
-    #store-basket-div{
-        display: none;
-    }
-    
-    #store-map-div{
-        margin-top: 1180px;
-        margin-left: 10px;
     }
 }
