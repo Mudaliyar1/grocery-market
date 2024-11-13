@@ -947,11 +947,23 @@ header {
 .store-page>.store-page-main-div>.sec-2nd>div:nth-child(1) {
     width: 720px;
     height: 250px;
-    border: 2px solid green;
     margin-top: -420px;
     max-width: 95%;
+    background-color: lightgray;
 }
 
+#store-map-div #pc-store-map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 200px;
+    position: relative;
+    background-color: white;
+    top: 27px;
+    left: 29px;
+    border-radius: 10px;
+}
 
 .store-page>.store-page-main-div>.sec-2nd>div:nth-child(2) {
     width: 370px;
@@ -963,6 +975,7 @@ header {
     position: relative;
     left: -10px;
 }
+
 
 #store-basket-div .pc-basket-div {
     display: flex;
