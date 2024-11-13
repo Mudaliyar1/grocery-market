@@ -842,6 +842,14 @@ header {
     justify-content: center;
     align-items: center;
 }
+#pc-store-img > #store-img-radio{
+    position: absolute;
+    top: 260px;
+}
+#pc-store-img > #store-img-radio > input{
+    transform: scale(1.6);
+    margin: 10px;
+}
 
 .store-page>.store-page-main-div>.sec-1st>div:nth-child(2) {
     width: 304px;
@@ -998,6 +1006,11 @@ header {
         margin-left: -20px;
     }
 }
+@media (max-width:1249px) {
+    .store-page>.store-page-main-div>.sec-2nd>div:nth-child(2) {
+        margin-left: -5px;
+    }
+}
 
 #store-basket-div #basket-header {
     width: 30%;
@@ -1150,9 +1163,8 @@ header {
     text-align: center;
     width: 90px;
     position: sticky;
-    top: 2px;
-    margin-top: 5px;
-    margin-left: 5px;
+    top: 20px;
+    left: 10px;
     z-index: 20;
 }
 
