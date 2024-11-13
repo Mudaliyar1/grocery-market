@@ -842,11 +842,11 @@ header {
     justify-content: center;
     align-items: center;
 }
-#pc-store-img > #store-img-radio{
+#pc-store-img > #pc-store-img-radio{
     position: absolute;
     top: 260px;
 }
-#pc-store-img > #store-img-radio > input{
+#pc-store-img > #pc-store-img-radio > input{
     transform: scale(1.6);
     margin: 10px;
 }
@@ -961,7 +961,7 @@ header {
     position: relative;
     background-color: white;
     top: 27px;
-    left: 29px;
+    left: 33px;
     border-radius: 10px;
 }
 
@@ -1061,14 +1061,55 @@ header {
 #store-mobile>div:nth-child(1) {
     width: 300px;
     height: 330px;
-    border: 2px solid green;
+    background-color: lightgray;
 }
+
+#store-mobile-img #mobile-store-img{
+    width: 240px;
+    height: 276px;
+    background-color: white;
+    position: relative;
+    top: 25px;
+    left: 28px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mobile-store-img > #mobile-store-img-radio{
+    position: absolute;
+    top: 240px;
+}
+#mobile-store-img > #mobile-store-img-radio > input{
+    transform: scale(1.6);
+    margin: 10px;
+}
+
 
 #store-mobile>div:nth-child(2) {
     width: 300px;
     height: 300px;
-    border: 2px solid green;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
+
+#store-mobile-detail #mobile-store-detail {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    /* margin-left: -30px; */
+    font-size: 20px;
+}
+#store-mobile-detail #mobile-store-detail > form > input{
+    width: 250px;
+    border: none;
+    border-bottom: 1px solid green;
+    margin-top: 10px;
+    font-size: 17px;
+    text-align: center;
+}
+
 
 #store-mobile>div:nth-child(3) {
     width: 300px;
@@ -1126,8 +1167,22 @@ header {
 #store-mobile>div:nth-child(4) {
     width: 80%;
     height: 300px;
-    border: 2px solid green;
+    background-color: lightgray;
 }
+
+#store-mobile-map #mobile-store-map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 89%;
+    height: 270px;
+    position: relative;
+    background-color: white;
+    top: 17px;
+    left: 5%;
+    border-radius: 10px;
+}
+
 
 #store-mobile>div:nth-child(5) {
     width: 300px;
