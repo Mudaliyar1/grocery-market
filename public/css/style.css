@@ -24,13 +24,12 @@ header {
     justify-content: center;
     transition: all 0.3s ease;
     z-index: 5;
-    /* border-bottom: 2.5px solid green; */
     text-align: center;
 }
 
 #shoppingCart-icon {
     display: none;
-    position: fixed;
+    position: absolute;
     top: 40px;
     left: 80%;
     z-index: 20;
@@ -44,7 +43,7 @@ header {
 
 @media (max-width : 640px) {
     #shoppingCart-icon {
-        position: fixed;
+        position: absolute;
         left: 75%;
 
     }
@@ -52,7 +51,7 @@ header {
 
 @media (max-width : 600px) {
     #shoppingCart-icon {
-        position: fixed;
+        position: absolute;
         left: 75%;
 
     }
@@ -60,7 +59,7 @@ header {
 
 @media (max-width : 500px) {
     #shoppingCart-icon {
-        position: fixed;
+        position: absolute;
         left: 70%;
 
     }
@@ -68,7 +67,7 @@ header {
 
 @media (max-width : 400px) {
     #shoppingCart-icon {
-        position: fixed;
+        position: absolute;
         left: 65%;
 
     }
@@ -106,24 +105,12 @@ header {
     top: 600px;
 }
 
-/* #left-hamburger>div>:nth-child(2) {
-    position: absolute;
-    top: 600px;
-    z-index: 400;
-} */
 
 
 .closeIcon>i {
     cursor: pointer;
-    /* transition:  all 0.2s ease; */
     animation: closean 2s ease infinite;
 }
-
-/* 
-.closeIcon>i:hover{
-    transform: rotate(90deg);
-    scale: 0.8;
-} */
 
 
 @keyframes closean {
@@ -232,11 +219,9 @@ header {
     text-decoration: none;
     color: black;
     font-weight: 700;
-    /* border: 2px solid green; */
     border-radius: 9px;
     font-family: "Acme", sans-serif;
     width: 150px;
-    /* padding: 7px; */
     text-align: left;
 }
 
@@ -337,9 +322,7 @@ header {
 }
 
 #social-media-icons>a>i {
-    /* border: 2px solid black; */
     padding: 15px;
-    /* border-radius: 50%; */
     font-size: 20px;
     color: green;
 }
@@ -366,25 +349,9 @@ header {
     gap: 20px;
     padding: 20px;
     margin-left: -10px;
-    /* background-color: red; */
-    /* overflow-x: scroll; */
 }
 
-/* @media(min-width: 900px) {
-    #store-container {
-        width: 90%;
-        margin-left: -30px;
-        overflow: auto;
-    }
-}
 
-@media(min-width: 1000px) {
-    #store-container {
-        width: 80%;
-        margin-left: 70px;
-        overflow: auto;
-    }
-} */
 @media(max-width: 1280px) {
     #store-container {
         width: 60%;
@@ -410,7 +377,6 @@ header {
     #store-container {
         width: 60%;
         margin-left: 120px;
-        /* overflow: auto; */
     }
 }
 
@@ -603,6 +569,7 @@ header {
 /* store page css code starts  here */
 
 
+
 @media (max-width:1200px) {
     #store-pc {
         display: none;
@@ -610,32 +577,12 @@ header {
 }
 
 .store-page {
-    /* position: relative; */
     top: 10px;
     overflow-y: hidden;
     height: 100%;
 }
 
 
-/* @media (max-width : 2000px) {
-    .store-page-main-div{
-        position: absolute;
-        left: 130px;
-        
-    }
-}
-@media (max-width : 1900px) {
-    .store-page-main-div{
-        position: absolute;
-        left: 80px;
-    }
-}
-@media (max-width : 1850px) {
-    .store-page-main-div{
-        position: absolute;
-        left: 10px;
-    }
-} */
 
 .store-page-main-div .sec-1st {
     display: grid;
@@ -830,7 +777,7 @@ header {
     background-color: lightgray;
 }
 
-#store-img-div #pc-store-img{
+#store-img-div #pc-store-img {
     width: 250px;
     height: 296px;
     background-color: white;
@@ -842,11 +789,13 @@ header {
     justify-content: center;
     align-items: center;
 }
-#pc-store-img > #pc-store-img-radio{
+
+#pc-store-img>#pc-store-img-radio {
     position: absolute;
     top: 260px;
 }
-#pc-store-img > #pc-store-img-radio > input{
+
+#pc-store-img>#pc-store-img-radio>input {
     transform: scale(1.6);
     margin: 10px;
 }
@@ -864,7 +813,8 @@ header {
     margin-left: -30px;
     font-size: 20px;
 }
-#store-detail-div #pc-store-detail > form > input{
+
+#store-detail-div #pc-store-detail>form>input {
     width: 320px;
     border: none;
     border-bottom: 1px solid green;
@@ -952,7 +902,7 @@ header {
     background-color: lightgray;
 }
 
-#store-map-div #pc-store-map{
+#store-map-div #pc-store-map {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1019,6 +969,7 @@ header {
         margin-left: -20px;
     }
 }
+
 @media (max-width:1249px) {
     .store-page>.store-page-main-div>.sec-2nd>div:nth-child(2) {
         margin-left: -5px;
@@ -1037,6 +988,9 @@ header {
 
 
 /* store css code for mobile is under */
+
+
+
 
 @media (min-width:1200px) {
     #store-part-2 {
@@ -1064,7 +1018,7 @@ header {
     background-color: lightgray;
 }
 
-#store-mobile-img #mobile-store-img{
+#store-mobile-img #mobile-store-img {
     width: 240px;
     height: 276px;
     background-color: white;
@@ -1076,11 +1030,13 @@ header {
     justify-content: center;
     align-items: center;
 }
-#mobile-store-img > #mobile-store-img-radio{
+
+#mobile-store-img>#mobile-store-img-radio {
     position: absolute;
     top: 240px;
 }
-#mobile-store-img > #mobile-store-img-radio > input{
+
+#mobile-store-img>#mobile-store-img-radio>input {
     transform: scale(1.5);
     margin: 10px;
 }
@@ -1101,7 +1057,8 @@ header {
     /* margin-left: -30px; */
     font-size: 20px;
 }
-#store-mobile-detail #mobile-store-detail > form > input{
+
+#store-mobile-detail #mobile-store-detail>form>input {
     width: 250px;
     border: none;
     border-bottom: 1px solid green;
@@ -1170,7 +1127,7 @@ header {
     background-color: lightgray;
 }
 
-#store-mobile-map #mobile-store-map{
+#store-mobile-map #mobile-store-map {
     display: flex;
     justify-content: center;
     align-items: center;
